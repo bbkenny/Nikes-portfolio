@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import styles from './Header.module.css';
+import Link from "next/link";
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
@@ -12,12 +12,20 @@ export default function Header() {
             <span className={styles.logoText}>Nikes</span>
           </Link>
         </div>
-        
+
         <nav className={styles.nav}>
-          <Link href="#features" className={styles.navLink}>Features</Link>
-          <Link href="#portfolio" className={styles.navLink}>Portfolio</Link>
-          <Link href="#about" className={styles.navLink}>About</Link>
-          <Link href="#contact" className={styles.navLink}>Contact</Link>
+          <Link href="#features" className={styles.navLink}>
+            Features
+          </Link>
+          <Link href="#portfolio" className={styles.navLink}>
+            Portfolio
+          </Link>
+          <Link href="#about" className={styles.navLink}>
+            About
+          </Link>
+          <Link href="#contact" className={styles.navLink}>
+            Contact
+          </Link>
         </nav>
 
         <div className={styles.cta}>

@@ -1,27 +1,108 @@
-# 🎓 SheBuilds Frontend
+# Babalola Olanike - Professional Portfolio
 
-Web application for the SheBuilds proof-of-skill NFT platform.
+Welcome to the professional portfolio website of **Babalola Olanike**. This project is a frontend web application designed to showcase my research, professional experience, skills, and achievements in transport planning, logistics, and sustainable urbanization.
 
-## 🚀 Getting Started
+## 🎓 About Me
+
+I am a **PhD Researcher in Sustainable Urbanisation** at the University of Lagos, Nigeria, and a recipient of the prestigious **2024 Lee Schippers Memorial Scholarship Award (Africa Scholar)**. I am also a fellow in the **5th cohort of the SLOCAT–VREF Young Leaders in Sustainable Transport Program**.
+
+My research focuses on **"Multimodal Freight Transportation Modelling: Driving Smart and Resilient Freight in Metropolitan Lagos"**, combining comparative policy reviews with global best-practice integration to simulate multimodal freight policies and technologies. My work evaluates the medium- and long-term impacts of emerging freight transport innovations on urban logistics efficiency and resilience, with a focus on driving the institutionalisation of **"Smart Freight"** systems in Lagos.
+
+### 🏆 Academic Background
+- **Master of Science (MSc)** in Transport and Logistics - **First Class (Distinction)**  
+  Lagos State University (2021-2022)  
+  *Thesis: Investigation of e-Procurement Adoption and Users Experience in Lagos State MDAs*
+  
+- **Bachelor of Science/Education (BSc/Ed)** in Economics and Education - **Second Class Upper Division**  
+  Lagos State University (2015-2019)
+
+### 💼 Professional Experience
+- **Transport Analyst** - FAOCON Nigeria Limited (Freelance, Jun 2025 - Present; Full-time, Aug 2023 - Present; Contract, Nov 2022 - Jul 2023)
+- **Public Procurement Intern** - Federal Airports Authority of Nigeria (Jul 2019 - Dec 2020)
+- **Class Teacher** - West Coastland Foundation School (Jul 2006 - Jan 2015)
+
+### 🔬 Research & Publications
+- Co-author: *"Bridging Generations for a Zero-Emission Future – Young Leaders' Perspectives for Just Transformations to Sustainable Transport"* (SLOCAT-VREF, 2025)
+- Research focus areas:
+  - Multimodal freight transportation modelling
+  - Smart freight systems and urban logistics
+  - Sustainable transport policy analysis
+  - e-Procurement systems in public sector
+  - Transit-oriented development (TOD)
+
+### 🌍 Key Areas of Expertise
+- Transport Planning & Modelling
+- Supply Chain Management
+- Logistics & Freight Systems
+- e-Procurement & Public Procurement
+- Sustainable Urbanisation
+- Traffic Analysis & Simulation
+- Policy Development & Stakeholder Engagement
+
+## 🛠 Tech Stack
+
+This portfolio website is built using modern frontend technologies:
+- **Framework**: Next.js 14+ (App Router)
+- **Language**: TypeScript
+- **Styling**: CSS Modules
+- **Code Quality**: ESLint
+- **Deployment**: Vercel (recommended)
+
+## 📂 Project Structure
+
+```
+b-nikesPortfolio/
+├── app/
+│   ├── components/       # Reusable UI components
+│   │   ├── Hero.tsx     # Landing hero section
+│   │   ├── Features.tsx # Key highlights and features
+│   │   ├── Footer.tsx   # Site footer
+│   │   └── Header.tsx   # Navigation header
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Landing page
+├── public/               # Static assets
+└── ...
+```
+
+## ✨ Portfolio Features
+
+- **Hero Section**: Professional introduction and current research focus
+- **Research & Publications**: Showcase of academic work and contributions
+- **Experience Timeline**: Detailed professional journey
+- **Skills & Expertise**: Technical and domain-specific competencies
+- **Achievements**: Awards, scholarships, and recognitions
+- **Contact**: Professional networking and collaboration opportunities
+
+## 🏃‍♂️ Getting Started
 
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
-- MetaMask or compatible Web3 wallet
 
 ### Installation
 
-```bash
-npm install
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bbkenny/Nikes-portfolio.git
+   cd b-nikesPortfolio
+   ```
 
-### Development
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```bash
-npm run dev
-```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production
 
@@ -30,81 +111,35 @@ npm run build
 npm start
 ```
 
-## 🎨 Features
+## 🎯 Core Skills
 
-### For Builders 👩‍💻
-- **Profile Dashboard**: View all earned credentials
-- **Skill Showcase**: Display skills with visual badges
-- **Project Portfolio**: Showcase completed projects
-- **Public Profile**: Shareable profile URL for recruiters
-- **Wallet Connection**: Connect with MetaMask
+**Technical:**
+- Microsoft Excel (Advanced)
+- Traffic Analysis Software
+- Transport Simulation Tools
+- Quantitative Analysis & Operations Research
+- Grant Writing & Administration
 
-### For Issuers 🏫
-- **Credential Minting**: Issue NFT credentials to builders
-- **Batch Operations**: Mint multiple credentials at once
-- **Template Management**: Create reusable credential templates
-- **Analytics**: Track issued credentials and recipients
+**Professional:**
+- Transport Economics
+- Research Methodologies
+- Process Excellence
+- Technology Change Management
+- Stakeholder Engagement
 
-### For Recruiters 💼
-- **Discover Talent**: Browse women builders by skills
-- **Verify Credentials**: On-chain verification of achievements
-- **Filter & Search**: Find builders with specific skills
-- **View Portfolios**: See projects and credentials
+## 🏅 Notable Achievements
 
-## 🏗️ Tech Stack
+- **2024 Lee Schippers Memorial Scholarship Award** (Africa Scholar)
+- **Fellow, SLOCAT–VREF Young Leaders in Sustainable Transport** (5th Cohort)
+- **First Class Master's Degree** in Transport and Logistics
+- Published researcher with SLOCAT Partnership on Sustainable Transport
 
-- **Framework**: Next.js 14+ (App Router)
-- **Language**: TypeScript
-- **Styling**: CSS (custom design system)
-- **Web3**: ethers.js or wagmi
-- **Wallet**: RainbowKit or Web3Modal
-- **State**: React Context API
+## 📬 Connect With Me
 
-## 📁 Project Structure
+- **LinkedIn**: [linkedin.com/in/olanikebabalola](https://www.linkedin.com/in/olanikebabalola)
+- **Location**: Lagos State, Nigeria
+- **Email**: [Contact via LinkedIn]
 
-```
-frontend/
-├── app/                    # Next.js app directory
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Landing page
-│   ├── profile/           # Builder profiles
-│   ├── issuer/            # Issuer dashboard
-│   └── discover/          # Recruiter discovery
-├── components/            # Reusable components
-│   ├── Credential/        # NFT credential display
-│   ├── WalletConnect/     # Wallet connection
-│   └── SkillBadge/        # Skill badges
-├── lib/                   # Utilities
-│   ├── contracts/         # Contract ABIs and addresses
-│   ├── web3/              # Web3 utilities
-│   └── ipfs/              # IPFS helpers
-└── public/                # Static assets
-```
+---
 
-## 🔗 Connecting to Smart Contracts
-
-1. Deploy the SheBuilds contract
-2. Update contract address in `lib/contracts/addresses.ts`
-3. Connect MetaMask to the network
-4. Start the frontend
-
-## 📝 Environment Variables
-
-Create a `.env.local` file:
-
-```env
-NEXT_PUBLIC_CONTRACT_ADDRESS=your_contract_address_here
-NEXT_PUBLIC_CHAIN_ID=1337
-NEXT_PUBLIC_NFT_STORAGE_KEY=your_nft_storage_key
-```
-
-## 🎯 Next Steps
-
-- [ ] Install Web3 dependencies
-- [ ] Create wallet connection component
-- [ ] Build builder profile UI
-- [ ] Build issuer dashboard
-- [ ] Build recruiter discovery interface
-- [ ] Integrate IPFS for metadata
-- [ ] Add credential display components
-- [ ] Implement search and filtering
+*This portfolio showcases my commitment to advancing sustainable transport solutions, driving evidence-based policy development, and contributing to the global transport and logistics community through research, innovation, and collaboration.*

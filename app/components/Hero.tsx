@@ -1,34 +1,33 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <div className={styles.content}>
-          <h1 className={styles.title}>
-            Build Your Professional Portfolio
-          </h1>
-          <p className={styles.subtitle}>
-            Showcase your skills, projects, and achievements. Create a stunning portfolio that stands out and attracts opportunities.
-          </p>
-          <div className={styles.buttons}>
-            <Link href="/signup" className={styles.primaryBtn}>
-              Start Your Portfolio
-            </Link>
-            <Link href="#features" className={styles.secondaryBtn}>
-              Learn More
-            </Link>
+        <div className={styles.badges}>
+          <div className={styles.badge}>
+            <span>🎓 University of Lagos</span>
+          </div>
+          <div className={styles.badge}>
+            <span>🏆 SLOCAT-VREF Young Leader</span>
           </div>
         </div>
-        <div className={styles.illustration}>
-          <div className={styles.box}>
-            <div className={styles.card}></div>
-            <div className={styles.card}></div>
-            <div className={styles.card}></div>
-          </div>
+        
+        <h1 className={styles.name}>
+          Babalola<br />
+          Olanike
+        </h1>
+        
+        <p className={styles.tagline}>
+          Advancing Sustainable Transport & Smart Freight Systems
+        </p>
+        
+        <div className={styles.contact}>
+          <a href="mailto:contact@olanikebabalola.com" className={styles.emailBtn}>
+            olanikebabalola@gmail.com
+          </a>
         </div>
       </div>
     </section>

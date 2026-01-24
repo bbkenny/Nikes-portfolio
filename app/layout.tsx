@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nikes Portfolio | Showcase Your Skills & Projects",
-  description: "A modern portfolio platform to showcase your skills, projects, and professional achievements. Build your personal brand and connect with opportunities.",
+  description:
+    "A modern portfolio platform to showcase your skills, projects, and professional achievements. Build your personal brand and connect with opportunities.",
 };
 
 export default function RootLayout({
