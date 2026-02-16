@@ -44,9 +44,21 @@ My research focuses on **"Multimodal Freight Transportation Modelling: Driving S
 This portfolio website is built using modern frontend technologies:
 - **Framework**: Next.js 14+ (App Router)
 - **Language**: TypeScript
-- **Styling**: CSS Modules
+- **Styling**: Tailwind CSS (with custom color palette)
 - **Code Quality**: ESLint
 - **Deployment**: Vercel (recommended)
+
+## 🎨 Color Palette & Theme
+
+The design system is built around a professional, earthy, and sophisticated palette reflecting sustainability and premium quality. It supports both **Light (Day)** and **Dark (Night)** modes.
+
+| Name | Hex Code | Purpose |
+| :--- | :--- | :--- |
+| **Forest Night** | `#192420` | Deep green/black used for **secondary dark backgrounds**, cards in dark mode, or footer sections. |
+| **Olive Slate** | `#707C5B` | A muted, earthy green. Used for **accents, icons, secondary actions**, or subtext to add organic depth. |
+| **Antique Gold** | `#C79340` | The primary **brand/accent color**. Used for buttons, highlights, active states, and glow effects. |
+| **Ivory Mist** | `#F6F3E8` | An off-white/cream color. The primary **background for Light Mode** and text color for Dark Mode. |
+| **Obsidian Black** | `#13140F` | A deep, warm black. Used for **main text in Light Mode** or miscellaneous UI elements. |
 
 ## 📂 Project Structure
 
