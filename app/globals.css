@@ -1,67 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #667eea;
-  --primary-dark: #764ba2;
-  --text-primary: #1f2937;
-  --text-secondary: #4b5563;
-  --text-tertiary: #6b7280;
-  --border: #e5e7eb;
-  --bg-light: #f9fafb;
+  /* Light Mode (Day) */
+  --background: #F6F3E8; /* Ivory Mist */
+  --foreground: #13140F; /* Obsidian Black */
+  --primary: #C79340;    /* Antique Gold */
+  --secondary: #707C5B;  /* Olive Slate */
+  --accent-dark: #192420; /* Forest Night */
+  
+  --card: #ffffff;
+  --card-foreground: #13140F;
+  --border: #e2e8f0;
 }
 
+[data-theme='dark'] {
+  /* Dark Mode (Night) */
+  --background: #192420; /* Forest Night */
+  --foreground: #F6F3E8; /* Ivory Mist */
+  --primary: #C79340;    /* Antique Gold */
+  --secondary: #707C5B;  /* Olive Slate */
+  --accent-light: #F6F3E8; /* Ivory Mist */
+  
+  --card: #13140F;       /* Obsidian Black */
+  --card-foreground: #F6F3E8;
+  --border: #2D3748;
+}
+
+/* Fallback for system preference if no class is set */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme='light']) {
+    --background: #192420;
+    --foreground: #F6F3E8;
+    --primary: #C79340;
+    --secondary: #707C5B;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  height: 100%;
-}
-
-body {
-  color: var(--text-primary);
+  color: var(--foreground);
   background: var(--background);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Source Sans Pro',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-p {
-  line-height: 1.6;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
