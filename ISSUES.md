@@ -6,9 +6,9 @@ This document tracks the development tasks for the professional portfolio websit
 - [x] **Issue #1**: Define Color Palette & Theme
   - ✅ Updated README with Forest Night, Olive Slate, Antique Gold, Ivory Mist, and Obsidian Black.
   - ✅ Implemented CSS variables for Day/Night mode switching.
-- [ ] **Issue #2**: Configure Tailwind CSS
-  - Implement custom colors in `tailwind.config.ts`.
-  - Set up `globals.css` with CSS variables.
+- [x] **Issue #2**: Configure Tailwind CSS
+  - ✅ Implement custom colors in `tailwind.config.ts`.
+  - ✅ Set up `globals.css` with CSS variables.
 
 ## 🏗️ Core Structure
 - [ ] **Issue #3**: Hero Section Implementation
