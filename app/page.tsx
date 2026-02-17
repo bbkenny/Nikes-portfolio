@@ -2,7 +2,8 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
-// import Features from "../components/Features";
+import GlobalEngagement from "../components/gallery/GlobalEngagement";
+import Gallery from "../components/gallery/Gallery";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -11,8 +12,9 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <GlobalEngagement />
       <Experience />
-      {/* <Features /> */}
+      <Gallery />
       <Footer />
     </div>
   );
