@@ -31,13 +31,13 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
             >
-              <Link 
+              <a 
                 href={link.href}
                 className="text-sm font-medium hover:text-antique-gold transition-colors relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-antique-gold transition-all group-hover:w-full" />
-              </Link>
+              </a>
             </motion.div>
           ))}
           <ThemeToggle />
