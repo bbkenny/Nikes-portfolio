@@ -3,44 +3,50 @@
 @tailwind utilities;
 
 :root {
-  /* Light Mode (Day) */
-  --background: #F6F3E8; /* Ivory Mist */
+  /* Light Mode (Day) - Ivory Mist */
+  --background: #F6F3E8; 
   --foreground: #13140F; /* Obsidian Black */
+  
   --primary: #C79340;    /* Antique Gold */
   --secondary: #707C5B;  /* Olive Slate */
-  --accent-dark: #192420; /* Forest Night */
   
   --card: #ffffff;
   --card-foreground: #13140F;
   --border: #e2e8f0;
+  
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
 }
 
 [data-theme='dark'] {
-  /* Dark Mode (Night) */
-  --background: #192420; /* Forest Night */
+  /* Dark Mode (Night) - Forest Night */
+  --background: #192420; 
   --foreground: #F6F3E8; /* Ivory Mist */
+  
   --primary: #C79340;    /* Antique Gold */
   --secondary: #707C5B;  /* Olive Slate */
-  --accent-light: #F6F3E8; /* Ivory Mist */
   
-  --card: #13140F;       /* Obsidian Black */
+  --card: #1E2B26;       /* Lighter Forest Night */
   --card-foreground: #F6F3E8;
   --border: #2D3748;
+  
+  --muted: #2D3748;
+  --muted-foreground: #94a3b8;
 }
 
-/* Fallback for system preference if no class is set */
+/* System preference fallback */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     --background: #192420;
     --foreground: #F6F3E8;
     --primary: #C79340;
     --secondary: #707C5B;
+    --card: #1E2B26;
+    --card-foreground: #F6F3E8;
+    --border: #2D3748;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  @apply bg-background text-foreground transition-colors duration-300;
 }

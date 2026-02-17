@@ -11,13 +11,20 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        card: "var(--card)",
+        "card-foreground": "var(--card-foreground)",
+        border: "var(--border)",
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+        
+        // Brand Specific
         "forest-night": "#192420",
         "olive-slate": "#707C5B",
         "antique-gold": "#C79340",
         "ivory-mist": "#F6F3E8",
         "obsidian-black": "#13140F",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
