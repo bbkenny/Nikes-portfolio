@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "clsx": "^2.1.0",
     "d3-scale": "^4.0.2",
     "embla-carousel-autoplay": "^8.6.0",
