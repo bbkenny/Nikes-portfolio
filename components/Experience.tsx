@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
+import { Briefcase, Calendar } from "lucide-react";
 
 export default function Experience() {
   const experiences = [
@@ -10,57 +10,68 @@ export default function Experience() {
       company: "FAOCON Nigeria Limited",
       period: "2022 - Present",
       type: "Freelance / Full-time",
-      description: "Conducting transport data analysis and supporting policy development for urban mobility projects.",
+      description: "Leading transport data analysis and supporting policy development for urban mobility projects in Lagos. Spearheading data-driven strategies for resilient freight systems.",
     },
     {
       role: "Public Procurement Intern",
       company: "Federal Airports Authority of Nigeria",
       period: "2019 - 2020",
       type: "Internship",
-      description: "Assisted in procurement processes and supply chain documentation for aviation projects.",
+      description: "Managed procurement processes and supply chain documentation. Assisted in auditing compliance for aviation logistics contracts.",
     },
     {
-      role: "Class Teacher",
+      role: "Class Teacher & Administrator",
       company: "West Coastland Foundation School",
       period: "2006 - 2015",
       type: "Full-time",
-      description: "Developed educational curriculums and managed classroom administration.",
+      description: "Developed educational curriculums and managed classroom administration, fostering early analytical skills in students.",
     },
   ];
 
   return (
-    <section id="experience" className="py-20">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <h2 className="text-3xl font-bold mb-16 text-center">
-          <span className="border-b-4 border-antique-gold pb-2">Professional Timeline</span>
-        </h2>
+    <section id="experience" className="py-24 bg-background">
+      <div className="container mx-auto px-6 max-w-6xl">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="text-antique-gold font-bold tracking-widest text-sm uppercase">Career Path</span>
+          <h2 className="text-4xl font-serif font-bold mt-2">Professional Experience</h2>
+        </motion.div>
 
-        <div className="relative border-l-2 border-olive-slate/20 ml-4 md:ml-10 space-y-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences.map((exp, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="relative pl-8 md:pl-12"
+              className="group relative bg-card text-card-foreground p-8 rounded-2xl border border-border shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 overflow-hidden"
             >
-              <span className="absolute -left-[9px] top-0 p-1 bg-background border-2 border-antique-gold rounded-full text-antique-gold">
-                <Briefcase className="w-3 h-3" />
-              </span>
+              {/* Gold Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-antique-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
-                <h3 className="text-xl font-bold">{exp.role}</h3>
-                <span className="text-sm font-mono text-olive-slate">{exp.period}</span>
+              <div className="relative z-10">
+                <div className="w-12 h-12 bg-antique-gold/10 rounded-xl flex items-center justify-center text-antique-gold mb-6 group-hover:bg-antique-gold group-hover:text-white transition-colors">
+                  <Briefcase className="w-6 h-6" />
+                </div>
+
+                <h3 className="text-xl font-bold mb-1">{exp.role}</h3>
+                <p className="text-secondary font-medium mb-4">{exp.company}</p>
+                
+                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+                  <Calendar className="w-4 h-4" />
+                  <span>{exp.period}</span>
+                  <span className="px-2 py-0.5 rounded-full bg-secondary/10 text-xs font-bold">{exp.type}</span>
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {exp.description}
+                </p>
               </div>
-              
-              <p className="text-md font-medium text-secondary mb-2">{exp.company}</p>
-              <span className="inline-block px-2 py-1 text-xs rounded bg-secondary/10 text-secondary mb-3">
-                {exp.type}
-              </span>
-              <p className="text-secondary dark:text-gray-400 leading-relaxed">
-                {exp.description}
-              </p>
             </motion.div>
           ))}
         </div>
