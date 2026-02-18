@@ -1,8 +1,10 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Experience from "../components/Experience";
+import Research from "../components/Research";
+import Awards from "../components/Awards";
 import GlobalEngagement from "../components/gallery/GlobalEngagement";
+import Experience from "../components/Experience";
 import Gallery from "../components/gallery/Gallery";
 import Footer from "../components/Footer";
 
@@ -12,6 +14,8 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Research />
+      <Awards />
       <GlobalEngagement />
       <Experience />
       <Gallery />
